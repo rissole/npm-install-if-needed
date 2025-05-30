@@ -1,0 +1,36 @@
+{
+  "name": "npm-install-hash",
+  "version": "1.0.0",
+  "description": "A TypeScript utility that automatically runs npm install only when your package files have changed",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "npm",
+    "install",
+    "hash",
+    "typescript",
+    "automation"
+  ],
+  "author": "rissole",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.5.4",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.1.2"
+  },
+  "engines": {
+    "node": ">=20.17.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+} 
